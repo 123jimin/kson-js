@@ -33,6 +33,7 @@ switch(in_format) {
 		in_kson = kson.ksh2kson(in_text);
 		break;
 	case 'kson':
+		in_kson = new kson.KSON(JSON.parse(in_text));
 		break;
 }
 
