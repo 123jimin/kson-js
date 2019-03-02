@@ -1,2 +1,2 @@
-*.ksh linguist-vendored
-*.kson linguist-generated
+*.ksh linguist-detectable=false
+*.kson linguist-detectable=false linguist-language=JSON
