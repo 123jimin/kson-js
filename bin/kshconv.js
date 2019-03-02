@@ -38,3 +38,15 @@ switch(in_format) {
 }
 
 if(in_kson == null) throw new Error("Something went wrong during reading the file.");
+
+let out_text = "";
+
+switch(out_format) {
+	case 'ksh':
+	 	throw new Error("Not yet implemented!");
+	case 'kson':
+		out_text = in_kson.toJSON();
+		break;
+}
+
+fs.writeFileSync(out_filename, out_text, 'utf-8');
